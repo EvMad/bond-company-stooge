@@ -15,23 +15,17 @@ const FILES_TO_CACHE = [
 
 // do i need a static cache vs runtime cache ??
 // what about api/images ??
+// install
 
-   // install
-self.addEventListener("install", function (evt) {
-    // pre cache image data
-    evt.waitUntil(
-      caches.open(DATA_CACHE_NAME).then((cache) => console.log("Opened cache"))
-    );
-      
-    // pre cache all static assets
-    evt.waitUntil(
-      caches.open(CACHE_NAME).then((cache) => cache.addAll(FILES_TO_CACHE))
-    );
-  
-    // tell the browser to activate this service worker immediately once it
-    // has finished installing
-    self.skipWaiting();
-  });
+self.addEventListener("install", function(event) {
+
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(function(cache) {
+      console.log("Opened cache");
+      return cache.addAll(urlsToCache);
+    })
+  );
+});
   
   // activate
   self.addEventListener("activate", function(evt) {
