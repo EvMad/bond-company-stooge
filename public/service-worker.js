@@ -1,5 +1,8 @@
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
+
+//files linked correctly vs express static public ???
+
 const FILES_TO_CACHE = [
 
     "/",
