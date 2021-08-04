@@ -8,6 +8,8 @@ This application uses a web manifest and a service-worker to cache data in Index
 
 ### Technologies Used
 
+Express, Mongoose, Node, Compression, MongoDB, JavaScript, HTML, CSS, Chart.JS
+
 ### Screenshots and Screencasts
 
 ![budget_app](budgetA.png)
