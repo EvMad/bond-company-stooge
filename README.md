@@ -13,3 +13,5 @@ Express, Mongoose, Node, Compression, MongoDB, JavaScript, HTML, CSS, Chart.JS
 ### Screenshots and Screencasts
 
 ![budget_app](budgetA.png)
+
+![screencast](budgetOffline.gif)
